@@ -46,8 +46,8 @@ jobs:
             
       - name: Build With Gradle
         run: |
-          sed -i "/   versionCode/c\\versionCode '1.${{ env.version }}'" ./app/build.gradle
-          sed -i "/   versionName/c\\versionName '1.${{ env.version }}'" ./app/build.gradle
+          sed -i "/   versionCode/c\\versionCode '${{ env.version }}'" ./app/build.gradle
+          sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
