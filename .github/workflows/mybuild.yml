@@ -16,17 +16,35 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-   
-      - name: 创建版本号
-        run: |              
-             if ! mv ./config/version  version; then
-                    echo "Failed to move the file."
-                    exit 1
-             fi
-                 
-             echo "version=$(bash ./config/version.sh)" >> $GITHUB_ENV
-             echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
-             mv version config/version
+      - name: 自动版本号
+        run: |
+           if [ ! -f version]; then
+               echo "0.0.0" > version
+           fi
+           VERSION=$(cat version)
+           IFS='.' read -r -a versionArray <<< "$VERSION"
+           ((versionArray[2]++))
+           
+           # 如果最后一位数字达到了20，则将它设为0并递增前一位数字
+           if [ "${versionArray[2]}" -eq 20 ]; then
+               versionArray[2]=0
+               ((versionArray[1]++))
+           
+               # 如果第二位数字达到了20，则将它设为0并递增第一位数字
+               if [ "${versionArray[1]}" -eq 20 ]; then
+                   versionArray[1]=0
+                   ((versionArray[0]++))
+               fi
+           fi
+           
+           # 将新版本号写回到version文件中
+           echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > version
+           vss=$(cat mac_version.txt)
+           # 打印新版本号
+           echo "version=${vss}" >> $GITHUB_ENV
+           echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
+           mv version config/version
+            
       - name: Build With Gradle
         run: |
           sed -i "/   versionCode/c\\versionCode '1.${{ env.version }}'" ./app/build.gradle
@@ -55,6 +73,6 @@ jobs:
       - name: 发布到release
         uses: softprops/action-gh-release@v1
         with:
-            tag_name: ${{ env.version }}
+            tag_name: v${{ env.version }}
             body_path: bgcode.txt
             files: ${{ github.workspace }}/apk/*
