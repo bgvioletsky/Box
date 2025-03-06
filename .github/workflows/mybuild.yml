@@ -1,6 +1,8 @@
 name: mybuild
 
 on:
+  schedule:
+    - cron: 6 */8 * * *
 #  push:
 #    branches:
 #      - main
@@ -14,10 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Build With Gradle
-        run: |
-          chmod +x gradlew
-          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+   
       - name: 创建版本号
         run: |              
              if ! mv ./config/version  version; then
@@ -28,6 +27,13 @@ jobs:
              echo "version=$(bash ./config/version.sh)" >> $GITHUB_ENV
              echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
              mv version config/version
+      - name: Build With Gradle
+        run: |
+          sed -i "/   versionCode/c\\versionCode ${{ env.version }}" ./app/build.gradle
+          sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
+          sed -i "/   applicationId/c\\applicationId 'bgvioletsky.tvbox.osc'" ./app/build.gradle
+          chmod +x gradlew
+          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
         run: |
           mkdir -p ${{ github.workspace }}/apk/
