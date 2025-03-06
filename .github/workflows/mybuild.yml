@@ -31,7 +31,6 @@ jobs:
         run: |
           sed -i "/   versionCode/c\\versionCode ${{ env.version }}" ./app/build.gradle
           sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
-          sed -i "/   applicationId/c\\applicationId 'bgvioletsky.tvbox.osc'" ./app/build.gradle
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
