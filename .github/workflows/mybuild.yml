@@ -21,6 +21,10 @@ jobs:
            if [ ! -f config/version]; then
                echo "0.0.0" > config/version
            fi
+           if [ ! -f versionCode ]; then
+               echo "1" > config/versionCode
+           fi
+           versionCode=$(cat config/versionCode)
            VERSION=$(cat config/version)
            IFS='.' read -r -a versionArray <<< "$VERSION"
            ((versionArray[2]++))
@@ -36,17 +40,19 @@ jobs:
                    ((versionArray[0]++))
                fi
            fi
-           
+           echo ${(versionCode++)} > config/versionCode
            # 将新版本号写回到version文件中
            echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > config/version
            vss=$(cat config/version)
            # 打印新版本号
+           echo versionCode=${versionCode}   >> $GITHUB_ENV
            echo "version=${vss}" >> $GITHUB_ENV
            echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
             
       - name: Build With Gradle
         run: |
-        
+          sed -i "/   versionCode/c\\versionCode '${{ env.versionCode }}'" ./app/build.gradle
+          sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
