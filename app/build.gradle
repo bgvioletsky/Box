@@ -24,7 +24,14 @@ android {
             }
         }
     }
-
+    signingConfigs {
+        release {
+            storeFile file("bgcode.jks") // 签名文件的路径
+            storePassword "bgcode" // 签名文件的密码
+            keyAlias "bgcode" // 密钥别名
+            keyPassword "bgcode" // 密钥密码
+        }
+    }
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
     }
@@ -33,7 +40,7 @@ android {
         release {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             minifyEnabled true
-
+            signingConfig signingConfigs.release
         }
     }
     flavorDimensions +=[ "abi","brand" ]
