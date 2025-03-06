@@ -87,7 +87,7 @@ jobs:
               git config --local user.email bglhcode@icloud.com
               git config --local user.name  bgcode
               git pull
-              git add ./config/version
+              git add ./config/version  ./config/versionCode
               git commit -m "更新version版本"
               git push
       - name: Upload App To Artifact
