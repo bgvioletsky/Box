@@ -18,7 +18,6 @@ jobs:
           fetch-depth: 0
       - name: 自动版本号
         run: |
-    
           mkdir -p config
 
           # 检查 version 文件是否存在，不存在则创建并初始化为 0.0.0
@@ -76,12 +75,14 @@ jobs:
           sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+
       - name: Prepare App
         run: |
           mkdir -p ${{ github.workspace }}/apk/
           for file in `find ~ -name "*.apk" -print`; do
             mv "$file" ${{ github.workspace }}/apk/
           done
+
       - name: Commit and push changes
         run: |
               git config --local user.email bglhcode@icloud.com
@@ -90,6 +91,7 @@ jobs:
               git add ./config/version  ./config/versionCode
               git commit -m "更新version版本"
               git push
+              
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v4
         with:
