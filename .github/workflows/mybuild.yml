@@ -18,10 +18,10 @@ jobs:
           fetch-depth: 0
       - name: 自动版本号
         run: |
-           if [ ! -f version]; then
-               echo "0.0.0" > version
+           if [ ! -f config/version]; then
+               echo "0.0.0" > config/version
            fi
-           VERSION=$(cat version)
+           VERSION=$(cat config/version)
            IFS='.' read -r -a versionArray <<< "$VERSION"
            ((versionArray[2]++))
            
@@ -38,12 +38,11 @@ jobs:
            fi
            
            # 将新版本号写回到version文件中
-           echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > version
-           vss=$(cat mac_version.txt)
+           echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > config/version
+           vss=$(cat config/version)
            # 打印新版本号
            echo "version=${vss}" >> $GITHUB_ENV
            echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
-           mv version config/version
             
       - name: Build With Gradle
         run: |
