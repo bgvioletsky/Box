@@ -68,7 +68,6 @@ jobs:
 
           # 打印发布时间到 bgcode.txt
           echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
-          echo "给毛毛写的定制" >> bgcode.txt
       - name: Build With Gradle
         run: |
           sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
