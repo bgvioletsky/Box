@@ -1,4 +1,4 @@
-name: mybuild
+name: test
 
 on:
   schedule:
