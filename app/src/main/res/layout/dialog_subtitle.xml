@@ -210,7 +210,7 @@
                     app:srcCompat="@drawable/scrollviewleft" />
 
                 <!--android:shadowColor="@color/color_FF000000"-->
-                <com.github.tvbox.osc.subtitle.widget.SimpleSubtitleView
+                <com.github.tvbox.bgcode.subtitle.widget.SimpleSubtitleView
                     android:id="@+id/subtitleStyleText"
                     android:layout_width="@dimen/vs_95"
                     android:layout_height="match_parent"

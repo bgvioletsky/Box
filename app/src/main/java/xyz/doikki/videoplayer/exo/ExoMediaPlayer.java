@@ -23,10 +23,10 @@ import androidx.media3.exoplayer.trackselection.DefaultTrackSelector;
 import androidx.media3.exoplayer.trackselection.TrackSelectionArray;
 import androidx.media3.ui.PlayerView;
 
-import com.github.tvbox.osc.base.App;
-import com.github.tvbox.osc.util.HawkConfig;
-import com.github.tvbox.osc.util.HawkUtils;
-import com.github.tvbox.osc.util.PlayerHelper;
+import com.github.tvbox.bgcode.base.App;
+import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.bgcode.util.HawkUtils;
+import com.github.tvbox.bgcode.util.PlayerHelper;
 import com.orhanobut.hawk.Hawk;
 
 import java.util.Locale;

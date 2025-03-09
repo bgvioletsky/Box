@@ -36,7 +36,7 @@
                 android:layout_marginTop="@dimen/vs_10"
                 android:orientation="horizontal">
                 	
-                <com.github.tvbox.osc.ui.tv.widget.CustomEditText
+                <com.github.tvbox.bgcode.ui.tv.widget.CustomEditText
                     android:id="@+id/etSearch"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/vs_50"
@@ -104,7 +104,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.github.tvbox.osc.ui.tv.widget.SearchKeyboard
+        <com.github.tvbox.bgcode.ui.tv.widget.SearchKeyboard
             android:id="@+id/keyBoardRoot"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

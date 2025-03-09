@@ -94,7 +94,7 @@ jobs:
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: com.github.tvbox.osc
+          name: com.github.tvbox.bgcode
           path: ${{ github.workspace }}/apk/*
       - name: 发布到release
         uses: softprops/action-gh-release@v1

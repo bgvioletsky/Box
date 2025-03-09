@@ -17,7 +17,7 @@ import androidx.media3.ui.AspectRatioFrameLayout;
 import androidx.media3.ui.PlayerView;
 import androidx.media3.ui.SubtitleView;
 
-import com.github.tvbox.osc.player.EXOmPlayer;
+import com.github.tvbox.bgcode.player.EXOmPlayer;
 import com.lzy.okgo.utils.OkLogger;
 
 import xyz.doikki.videoplayer.player.AbstractPlayer;

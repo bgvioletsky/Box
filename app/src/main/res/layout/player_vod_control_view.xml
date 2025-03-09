@@ -620,7 +620,7 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="4"-->
-    <com.github.tvbox.osc.subtitle.widget.SimpleSubtitleView
+    <com.github.tvbox.bgcode.subtitle.widget.SimpleSubtitleView
         android:id="@+id/subtitle_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
