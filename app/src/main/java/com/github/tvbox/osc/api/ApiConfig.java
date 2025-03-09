@@ -342,7 +342,7 @@ public class ApiConfig {
             sourceBeanList.put(siteKey, sb);
         }
         if (sourceBeanList != null && sourceBeanList.size() > 0) {
-            String home = Hawk.get(HawkConfig.HOME_API, "");
+            String home = Hawk.get(HawkConfig.HOME_API, "https://github.ednovas.xyz/https://raw.githubusercontent.com/bgvioletsky/BGBox_warehouse/master/json/api.json");
             SourceBean sh = getSource(home);
             if (sh == null || sh.getHide() == 1)
                 setSourceBean(firstSite);
@@ -368,7 +368,7 @@ public class ApiConfig {
         }
         // 获取默认解析
         if (parseBeanList != null && parseBeanList.size() > 0) {
-            String defaultParse = Hawk.get(HawkConfig.DEFAULT_PARSE, "https://github.ednovas.xyz/https://raw.githubusercontent.com/bgvioletsky/BGBox_warehouse/master/json/api.json");
+            String defaultParse = Hawk.get(HawkConfig.DEFAULT_PARSE, "");
             if (!TextUtils.isEmpty(defaultParse))
                 for (ParseBean pb : parseBeanList) {
                     if (pb.getName().equals(defaultParse))
