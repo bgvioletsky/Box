@@ -1,13 +1,13 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.content.Context;
 
 import com.blankj.utilcode.util.ToastUtils;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.bean.IJKCode;
-import com.github.tvbox.bgcode.player.EXOmPlayer;
-import com.github.tvbox.bgcode.player.IjkmPlayer;
-import com.github.tvbox.bgcode.player.render.SurfaceRenderViewFactory;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.bean.IJKCode;
+import com.github.tvbox.osc.player.EXOmPlayer;
+import com.github.tvbox.osc.player.IjkmPlayer;
+import com.github.tvbox.osc.player.render.SurfaceRenderViewFactory;
 import com.orhanobut.hawk.Hawk;
 
 import org.json.JSONException;

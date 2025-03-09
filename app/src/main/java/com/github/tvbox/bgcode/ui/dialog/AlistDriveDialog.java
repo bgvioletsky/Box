@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,12 +8,12 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.cache.RoomDataManger;
-import com.github.tvbox.bgcode.cache.StorageDrive;
-import com.github.tvbox.bgcode.event.InputMsgEvent;
-import com.github.tvbox.bgcode.event.RefreshEvent;
-import com.github.tvbox.bgcode.util.StorageDriveType;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.cache.RoomDataManger;
+import com.github.tvbox.osc.cache.StorageDrive;
+import com.github.tvbox.osc.event.InputMsgEvent;
+import com.github.tvbox.osc.event.RefreshEvent;
+import com.github.tvbox.osc.util.StorageDriveType;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 

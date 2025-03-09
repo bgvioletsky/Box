@@ -1,8 +1,8 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.util.StringUtils;
+import com.github.tvbox.osc.util.StringUtils;
 
 import java.io.Serializable;
 import java.util.ArrayList;

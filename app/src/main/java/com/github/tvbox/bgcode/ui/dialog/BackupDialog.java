@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,13 +10,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.data.AppDataManager;
-import com.github.tvbox.bgcode.ui.activity.HomeActivity;
-import com.github.tvbox.bgcode.ui.adapter.BackupAdapter;
-import com.github.tvbox.bgcode.util.DefaultConfig;
-import com.github.tvbox.bgcode.util.FileUtils;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.data.AppDataManager;
+import com.github.tvbox.osc.ui.activity.HomeActivity;
+import com.github.tvbox.osc.ui.adapter.BackupAdapter;
+import com.github.tvbox.osc.util.DefaultConfig;
+import com.github.tvbox.osc.util.FileUtils;
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.XXPermissions;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;

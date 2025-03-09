@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.util
+package com.github.tvbox.osc.util
 
-import com.github.tvbox.bgcode.bean.LiveChannelGroup
+import com.github.tvbox.osc.bean.LiveChannelGroup
 
 /**
  *Automatic generated

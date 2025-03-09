@@ -1,10 +1,10 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.bean.SourceBean;
-import com.github.tvbox.bgcode.ui.activity.HomeActivity;
-import com.github.tvbox.bgcode.ui.activity.SearchActivity;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.bean.SourceBean;
+import com.github.tvbox.osc.ui.activity.HomeActivity;
+import com.github.tvbox.osc.ui.activity.SearchActivity;
 import com.orhanobut.hawk.Hawk;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.content.Context;
 import android.view.View;
@@ -6,9 +6,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.util.FastClickCheckUtil;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.util.FastClickCheckUtil;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.orhanobut.hawk.Hawk;
 
 import org.jetbrains.annotations.NotNull;

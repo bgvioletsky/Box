@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.view.ViewGroup;
 
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.github.tvbox.bgcode.base.BaseLazyFragment;
+import com.github.tvbox.osc.base.BaseLazyFragment;
 
 import java.util.List;
 

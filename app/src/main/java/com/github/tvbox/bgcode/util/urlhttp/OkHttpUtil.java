@@ -1,7 +1,7 @@
-package com.github.tvbox.bgcode.util.urlhttp;
+package com.github.tvbox.osc.util.urlhttp;
 
-import com.github.tvbox.bgcode.util.OkGoHelper;
-import com.github.tvbox.bgcode.util.UA;
+import com.github.tvbox.osc.util.OkGoHelper;
+import com.github.tvbox.osc.util.UA;
 import com.lzy.okgo.OkGo;
 
 import java.io.IOException;

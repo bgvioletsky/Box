@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,11 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.subtitle.widget.SimpleSubtitleView;
-import com.github.tvbox.bgcode.ui.activity.HomeActivity;
-import com.github.tvbox.bgcode.util.FastClickCheckUtil;
-import com.github.tvbox.bgcode.util.SubtitleHelper;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.subtitle.widget.SimpleSubtitleView;
+import com.github.tvbox.osc.ui.activity.HomeActivity;
+import com.github.tvbox.osc.util.FastClickCheckUtil;
+import com.github.tvbox.osc.util.SubtitleHelper;
 
 import org.jetbrains.annotations.NotNull;
 

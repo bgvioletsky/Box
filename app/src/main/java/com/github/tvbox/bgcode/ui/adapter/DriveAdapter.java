@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -7,11 +7,11 @@ import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.bean.DriveFolderFile;
-import com.github.tvbox.bgcode.ui.dialog.AlistDriveDialog;
-import com.github.tvbox.bgcode.ui.dialog.WebdavDialog;
-import com.github.tvbox.bgcode.util.StorageDriveType;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.bean.DriveFolderFile;
+import com.github.tvbox.osc.ui.dialog.AlistDriveDialog;
+import com.github.tvbox.osc.ui.dialog.WebdavDialog;
+import com.github.tvbox.osc.util.StorageDriveType;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;
 
 import java.util.ArrayList;

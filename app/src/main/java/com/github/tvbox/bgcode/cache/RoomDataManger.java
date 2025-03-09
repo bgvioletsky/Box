@@ -1,16 +1,16 @@
-package com.github.tvbox.bgcode.cache;
+package com.github.tvbox.osc.cache;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.util.HawkConfig;
-import com.github.tvbox.bgcode.util.HistoryHelper;
-import com.github.tvbox.bgcode.bean.SourceBean;
-import com.github.tvbox.bgcode.bean.VodInfo;
-import com.github.tvbox.bgcode.data.AppDataManager;
-import com.github.tvbox.bgcode.util.StorageDriveType;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.util.HawkConfig;
+import com.github.tvbox.osc.util.HistoryHelper;
+import com.github.tvbox.osc.bean.SourceBean;
+import com.github.tvbox.osc.bean.VodInfo;
+import com.github.tvbox.osc.data.AppDataManager;
+import com.github.tvbox.osc.util.StorageDriveType;
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
 import com.google.gson.Gson;

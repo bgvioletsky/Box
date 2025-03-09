@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
-import com.github.tvbox.bgcode.base.App;
+import com.github.tvbox.osc.base.App;
 
 import java.io.DataInputStream;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;

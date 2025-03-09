@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util.urlhttp;
+package com.github.tvbox.osc.util.urlhttp;
 
 import java.io.InputStream;
 

@@ -1,13 +1,13 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.graphics.Color;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.BaseActivity;
-import com.github.tvbox.bgcode.bean.LiveSettingGroup;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.BaseActivity;
+import com.github.tvbox.osc.bean.LiveSettingGroup;
 
 import java.util.ArrayList;
 

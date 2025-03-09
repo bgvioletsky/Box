@@ -1,8 +1,8 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import android.util.Base64;
 
-import com.github.tvbox.bgcode.util.DefaultConfig;
+import com.github.tvbox.osc.util.DefaultConfig;
 
 /**
  * @author pj567

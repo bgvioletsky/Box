@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.base;
+package com.github.tvbox.osc.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,13 +18,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.PermissionChecker;
 import com.blankj.utilcode.util.ActivityUtils;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.callback.EmptyCallback;
-import com.github.tvbox.bgcode.callback.LoadingCallback;
-import com.github.tvbox.bgcode.ui.activity.DetailActivity;
-import com.github.tvbox.bgcode.util.AppManager;
-import com.github.tvbox.bgcode.util.HawkConfig;
-import com.github.tvbox.bgcode.util.LocaleHelper;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.callback.EmptyCallback;
+import com.github.tvbox.osc.callback.LoadingCallback;
+import com.github.tvbox.osc.ui.activity.DetailActivity;
+import com.github.tvbox.osc.util.AppManager;
+import com.github.tvbox.osc.util.HawkConfig;
+import com.github.tvbox.osc.util.LocaleHelper;
 import com.kingja.loadsir.callback.Callback;
 import com.kingja.loadsir.core.LoadService;
 import com.kingja.loadsir.core.LoadSir;

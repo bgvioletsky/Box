@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.server;
+package com.github.tvbox.osc.server;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.event.RefreshEvent;
-import com.github.tvbox.bgcode.receiver.DetailReceiver;
-import com.github.tvbox.bgcode.receiver.SearchReceiver;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.event.RefreshEvent;
+import com.github.tvbox.osc.receiver.DetailReceiver;
+import com.github.tvbox.osc.receiver.SearchReceiver;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.orhanobut.hawk.Hawk;
 
 import org.greenrobot.eventbus.EventBus;

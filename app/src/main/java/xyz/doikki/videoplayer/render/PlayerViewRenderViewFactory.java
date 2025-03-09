@@ -8,7 +8,7 @@ import android.util.Xml;
 
 import androidx.appcompat.view.ContextThemeWrapper;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 import com.lzy.okgo.utils.OkLogger;
 
 public class PlayerViewRenderViewFactory extends RenderViewFactory {

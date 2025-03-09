@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.tv;
+package com.github.tvbox.osc.ui.tv;
 
 import android.graphics.Bitmap;
 

@@ -1,12 +1,12 @@
-package com.github.tvbox.bgcode.receiver;
+package com.github.tvbox.osc.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.github.tvbox.bgcode.event.ServerEvent;
-import com.github.tvbox.bgcode.ui.activity.DetailActivity;
-import com.github.tvbox.bgcode.util.AppManager;
+import com.github.tvbox.osc.event.ServerEvent;
+import com.github.tvbox.osc.ui.activity.DetailActivity;
+import com.github.tvbox.osc.util.AppManager;
 
 import org.greenrobot.eventbus.EventBus;
 

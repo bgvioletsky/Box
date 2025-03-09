@@ -1,13 +1,13 @@
-package com.github.tvbox.bgcode.util.thunder;
+package com.github.tvbox.osc.util.thunder;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.bean.Movie;
-import com.github.tvbox.bgcode.util.FileUtils;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.bean.Movie;
+import com.github.tvbox.osc.util.FileUtils;
 import com.xunlei.downloadlib.XLDownloadManager;
 import com.xunlei.downloadlib.XLTaskHelper;
 import com.xunlei.downloadlib.android.XLUtil;

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.activity;
+package com.github.tvbox.osc.ui.activity;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.BaseActivity;
-import com.github.tvbox.bgcode.server.ControlManager;
-import com.github.tvbox.bgcode.ui.tv.QRCodeGen;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.BaseActivity;
+import com.github.tvbox.osc.server.ControlManager;
+import com.github.tvbox.osc.ui.tv.QRCodeGen;
 
 import me.jessyan.autosize.utils.AutoSizeUtils;
 

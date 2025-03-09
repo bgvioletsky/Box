@@ -1,8 +1,8 @@
-package com.github.tvbox.bgcode.viewmodel.drive;
+package com.github.tvbox.osc.viewmodel.drive;
 
-import com.github.tvbox.bgcode.bean.DriveFolderFile;
-import com.github.tvbox.bgcode.util.UA;
-import com.github.tvbox.bgcode.util.urlhttp.OkHttpUtil;
+import com.github.tvbox.osc.bean.DriveFolderFile;
+import com.github.tvbox.osc.util.UA;
+import com.github.tvbox.osc.util.urlhttp.OkHttpUtil;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

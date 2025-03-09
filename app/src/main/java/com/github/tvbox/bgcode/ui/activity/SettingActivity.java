@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.activity;
+package com.github.tvbox.osc.ui.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,15 +11,15 @@ import android.widget.TextView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.base.BaseActivity;
-import com.github.tvbox.bgcode.base.BaseLazyFragment;
-import com.github.tvbox.bgcode.ui.adapter.SettingMenuAdapter;
-import com.github.tvbox.bgcode.ui.adapter.SettingPageAdapter;
-import com.github.tvbox.bgcode.ui.fragment.ModelSettingFragment;
-import com.github.tvbox.bgcode.util.AppManager;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.base.BaseActivity;
+import com.github.tvbox.osc.base.BaseLazyFragment;
+import com.github.tvbox.osc.ui.adapter.SettingMenuAdapter;
+import com.github.tvbox.osc.ui.adapter.SettingPageAdapter;
+import com.github.tvbox.osc.ui.fragment.ModelSettingFragment;
+import com.github.tvbox.osc.util.AppManager;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.orhanobut.hawk.Hawk;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;
 import com.owen.tvrecyclerview.widget.V7LinearLayoutManager;

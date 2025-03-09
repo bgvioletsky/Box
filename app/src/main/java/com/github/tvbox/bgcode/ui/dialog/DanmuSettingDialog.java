@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.content.Context;
 import android.widget.ImageView;
@@ -7,10 +7,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.event.RefreshEvent;
-import com.github.tvbox.bgcode.ui.adapter.ButtonAdapter;
-import com.github.tvbox.bgcode.util.HawkUtils;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.event.RefreshEvent;
+import com.github.tvbox.osc.ui.adapter.ButtonAdapter;
+import com.github.tvbox.osc.util.HawkUtils;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;

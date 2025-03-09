@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import static com.bumptech.glide.load.resource.bitmap.VideoDecoder.FRAME_OPTION;
 import android.graphics.Bitmap;
@@ -19,8 +19,8 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.App;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.App;
 import com.google.common.net.HttpHeaders;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

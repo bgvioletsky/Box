@@ -1,10 +1,10 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.api.ApiConfig;
+import com.github.tvbox.osc.api.ApiConfig;
 import com.google.gson.Gson;
 
 import java.io.Serializable;

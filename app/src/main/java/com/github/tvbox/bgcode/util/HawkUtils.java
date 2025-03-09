@@ -1,13 +1,13 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.content.Context;
 
 import androidx.media3.exoplayer.DefaultRenderersFactory;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.bean.IJKCode;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.bean.IJKCode;
 import com.orhanobut.hawk.Hawk;
 
 import java.util.List;

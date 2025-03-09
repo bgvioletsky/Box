@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.fragment;
+package com.github.tvbox.osc.ui.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,18 +8,18 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.base.BaseLazyFragment;
-import com.github.tvbox.bgcode.bean.Movie;
-import com.github.tvbox.bgcode.bean.VodInfo;
-import com.github.tvbox.bgcode.cache.RoomDataManger;
-import com.github.tvbox.bgcode.event.ServerEvent;
-import com.github.tvbox.bgcode.ui.activity.*;
-import com.github.tvbox.bgcode.ui.adapter.HomeHotVodAdapter;
-import com.github.tvbox.bgcode.util.FastClickCheckUtil;
-import com.github.tvbox.bgcode.util.HawkConfig;
-import com.github.tvbox.bgcode.util.UA;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.base.BaseLazyFragment;
+import com.github.tvbox.osc.bean.Movie;
+import com.github.tvbox.osc.bean.VodInfo;
+import com.github.tvbox.osc.cache.RoomDataManger;
+import com.github.tvbox.osc.event.ServerEvent;
+import com.github.tvbox.osc.ui.activity.*;
+import com.github.tvbox.osc.ui.adapter.HomeHotVodAdapter;
+import com.github.tvbox.osc.util.FastClickCheckUtil;
+import com.github.tvbox.osc.util.HawkConfig;
+import com.github.tvbox.osc.util.UA;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

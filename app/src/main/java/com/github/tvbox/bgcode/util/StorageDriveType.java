@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import java.util.Locale;
 

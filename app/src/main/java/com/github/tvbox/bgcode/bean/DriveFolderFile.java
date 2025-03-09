@@ -1,9 +1,9 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import android.util.Base64;
 
-import com.github.tvbox.bgcode.cache.StorageDrive;
-import com.github.tvbox.bgcode.util.StorageDriveType;
+import com.github.tvbox.osc.cache.StorageDrive;
+import com.github.tvbox.osc.util.StorageDriveType;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 

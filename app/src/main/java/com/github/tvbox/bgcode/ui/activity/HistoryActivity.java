@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.activity;
+package com.github.tvbox.osc.ui.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,15 +7,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.BaseActivity;
-import com.github.tvbox.bgcode.bean.VodInfo;
-import com.github.tvbox.bgcode.cache.RoomDataManger;
-import com.github.tvbox.bgcode.event.RefreshEvent;
-import com.github.tvbox.bgcode.ui.adapter.HistoryAdapter;
-import com.github.tvbox.bgcode.ui.dialog.ConfirmClearDialog;
-import com.github.tvbox.bgcode.util.FastClickCheckUtil;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.BaseActivity;
+import com.github.tvbox.osc.bean.VodInfo;
+import com.github.tvbox.osc.cache.RoomDataManger;
+import com.github.tvbox.osc.event.RefreshEvent;
+import com.github.tvbox.osc.ui.adapter.HistoryAdapter;
+import com.github.tvbox.osc.ui.dialog.ConfirmClearDialog;
+import com.github.tvbox.osc.util.FastClickCheckUtil;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;
 import com.owen.tvrecyclerview.widget.V7GridLayoutManager;
 

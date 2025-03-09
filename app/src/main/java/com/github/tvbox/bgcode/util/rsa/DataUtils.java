@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util.rsa;
+package com.github.tvbox.osc.util.rsa;
 
 import android.util.Base64;
 

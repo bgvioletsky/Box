@@ -203,12 +203,12 @@
 -dontwarn jcifs.**
 
 # 实体类
-#-keep class com.github.tvbox.bgcode.bean.** { *; }
--keep class com.github.tvbox.bgcode.ui.fragment.homes.**{*;}
+#-keep class com.github.tvbox.osc.bean.** { *; }
+-keep class com.github.tvbox.osc.ui.fragment.homes.**{*;}
 #CardView
--keep class com.github.tvbox.bgcode.ui.tv.widget.card.**{*;}
+-keep class com.github.tvbox.osc.ui.tv.widget.card.**{*;}
 #ViewObj
--keep class com.github.tvbox.bgcode.ui.tv.widget.ViewObj{
+-keep class com.github.tvbox.osc.ui.tv.widget.ViewObj{
     <methods>;
 }
 

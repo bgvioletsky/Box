@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 /**
  * @author pj567

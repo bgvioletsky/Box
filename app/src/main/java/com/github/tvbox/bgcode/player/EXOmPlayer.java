@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.player;
+package com.github.tvbox.osc.player;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,7 +13,7 @@ import androidx.media3.common.Tracks;
 import androidx.media3.exoplayer.source.TrackGroupArray;
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector;
 import androidx.media3.exoplayer.trackselection.MappingTrackSelector;
-import com.github.tvbox.bgcode.util.StringUtils;
+import com.github.tvbox.osc.util.StringUtils;
 import xyz.doikki.videoplayer.exo.ExoMediaPlayer;
 
 public class EXOmPlayer extends ExoMediaPlayer {

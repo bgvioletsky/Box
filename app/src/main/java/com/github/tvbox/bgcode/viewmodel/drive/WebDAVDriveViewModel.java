@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.viewmodel.drive;
+package com.github.tvbox.osc.viewmodel.drive;
 
-import com.github.tvbox.bgcode.bean.DriveFolderFile;
+import com.github.tvbox.osc.bean.DriveFolderFile;
 import com.google.gson.JsonObject;
 import com.thegrizzlylabs.sardineandroid.DavResource;
 import com.thegrizzlylabs.sardineandroid.Sardine;

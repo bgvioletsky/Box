@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.view.View;
 import android.widget.FrameLayout;
@@ -6,9 +6,9 @@ import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.bean.AppInfo;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.bean.AppInfo;
+import com.github.tvbox.osc.util.HawkConfig;
 
 import java.util.ArrayList;
 

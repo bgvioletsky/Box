@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.subtitle.widget;
+package com.github.tvbox.osc.subtitle.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,12 +13,12 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.github.tvbox.bgcode.cache.CacheManager;
-import com.github.tvbox.bgcode.subtitle.DefaultSubtitleEngine;
-import com.github.tvbox.bgcode.subtitle.SubtitleEngine;
-import com.github.tvbox.bgcode.subtitle.model.Subtitle;
-import com.github.tvbox.bgcode.util.MD5;
-import com.github.tvbox.bgcode.util.StringUtils;
+import com.github.tvbox.osc.cache.CacheManager;
+import com.github.tvbox.osc.subtitle.DefaultSubtitleEngine;
+import com.github.tvbox.osc.subtitle.SubtitleEngine;
+import com.github.tvbox.osc.subtitle.model.Subtitle;
+import com.github.tvbox.osc.util.MD5;
+import com.github.tvbox.osc.util.StringUtils;
 
 
 import org.jetbrains.annotations.Nullable;

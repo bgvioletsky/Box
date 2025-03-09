@@ -24,7 +24,7 @@
  * @author J. David REQUEJO
  */
 
-package com.github.tvbox.bgcode.subtitle.model;
+package com.github.tvbox.osc.subtitle.model;
 
 public class Time {
 

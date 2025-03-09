@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.player;
+package com.github.tvbox.osc.player;
 
 public class TrackInfoBean {
     public int trackId;

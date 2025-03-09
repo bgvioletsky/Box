@@ -1,12 +1,12 @@
-package com.github.tvbox.bgcode.player.danmu;
+package com.github.tvbox.osc.player.danmu;
 
 import android.graphics.Color;
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.bean.Danmu;
-import com.github.tvbox.bgcode.util.ColorHelper;
-import com.github.tvbox.bgcode.util.FileUtils;
-import com.github.tvbox.bgcode.util.HawkUtils;
+import com.github.tvbox.osc.bean.Danmu;
+import com.github.tvbox.osc.util.ColorHelper;
+import com.github.tvbox.osc.util.FileUtils;
+import com.github.tvbox.osc.util.HawkUtils;
 import com.lzy.okgo.OkGo;
 
 import org.json.JSONArray;

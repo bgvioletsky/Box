@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,13 +8,13 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.bean.MovieSort;
-import com.github.tvbox.bgcode.bean.SourceBean;
-import com.github.tvbox.bgcode.server.ControlManager;
-import com.github.tvbox.bgcode.ui.activity.HomeActivity;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.bean.MovieSort;
+import com.github.tvbox.osc.bean.SourceBean;
+import com.github.tvbox.osc.server.ControlManager;
+import com.github.tvbox.osc.ui.activity.HomeActivity;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.hjq.permissions.Permission;

@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.orhanobut.hawk.Hawk;
 
 import java.util.LinkedHashMap;

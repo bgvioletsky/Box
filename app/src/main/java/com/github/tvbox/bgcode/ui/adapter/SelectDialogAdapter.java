@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.event;
+package com.github.tvbox.osc.event;
 
 /**
  * @author pj567

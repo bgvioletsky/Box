@@ -1,7 +1,7 @@
-package com.github.tvbox.bgcode.subtitle;
+package com.github.tvbox.osc.subtitle;
 
-import com.github.tvbox.bgcode.subtitle.model.Subtitle;
-import com.github.tvbox.bgcode.subtitle.runtime.AppTaskExecutor;
+import com.github.tvbox.osc.subtitle.model.Subtitle;
+import com.github.tvbox.osc.subtitle.runtime.AppTaskExecutor;
 
 /**
  * @author AveryZhong.

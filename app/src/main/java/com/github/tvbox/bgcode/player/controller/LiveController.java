@@ -1,10 +1,10 @@
-package com.github.tvbox.bgcode.player.controller;
+package com.github.tvbox.osc.player.controller;
 
 import android.content.Context;
 import android.view.MotionEvent;
 import android.widget.ProgressBar;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 
 import org.jetbrains.annotations.NotNull;
 

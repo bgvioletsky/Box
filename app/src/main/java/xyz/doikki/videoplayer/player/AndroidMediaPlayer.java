@@ -9,7 +9,7 @@ import android.os.Build;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
-import com.github.tvbox.bgcode.util.PlayerHelper;
+import com.github.tvbox.osc.util.PlayerHelper;
 
 import java.util.Map;
 import xyz.doikki.videoplayer.util.PlayerUtils;

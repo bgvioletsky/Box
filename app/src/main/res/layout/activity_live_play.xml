@@ -356,7 +356,7 @@
                     android:textStyle="normal"
                     android:visibility="visible" />
 
-                <com.github.tvbox.bgcode.ui.tv.widget.MarqueeTextView
+                <com.github.tvbox.osc.ui.tv.widget.MarqueeTextView
                     android:id="@+id/tv_current_program_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -431,7 +431,7 @@
                     android:textStyle="bold"
                     android:visibility="visible" />
 
-                <com.github.tvbox.bgcode.ui.tv.widget.MarqueeTextView
+                <com.github.tvbox.osc.ui.tv.widget.MarqueeTextView
                     android:id="@+id/tv_channel_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -534,7 +534,7 @@
                     android:textStyle="normal"
                     android:visibility="visible" />
 
-                <com.github.tvbox.bgcode.ui.tv.widget.MarqueeTextView
+                <com.github.tvbox.osc.ui.tv.widget.MarqueeTextView
                     android:id="@+id/tv_next_program_name"
                     android:layout_width="@dimen/vs_440"
                     android:layout_height="wrap_content"

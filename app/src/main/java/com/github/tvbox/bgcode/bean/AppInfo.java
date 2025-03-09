@@ -1,9 +1,9 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import android.content.pm.ApplicationInfo;
 import android.graphics.drawable.Drawable;
 
-import com.github.tvbox.bgcode.base.App;
+import com.github.tvbox.osc.base.App;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -14,7 +14,7 @@ import java.util.List;
  * @LastEditTime: 2025-03-09 16:05:13
  * @LastEditors: bgcode
  * @Description: 描述
- * @FilePath: /Box/app/src/main/java/com/github/tvbox/bgcode/bean/AppInfo.java
+ * @FilePath: /Box/app/src/main/java/com.github.tvbox.osc/bean/AppInfo.java
  * 本项目采用GPL 许可证，欢迎任何人使用、修改和分发。
  */
 

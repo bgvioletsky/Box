@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.player;
+package com.github.tvbox.osc.player;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.github.tvbox.bgcode.base.App;
+import com.github.tvbox.osc.base.App;
 
 import master.flame.danmaku.controller.DrawHandler;
 import master.flame.danmaku.danmaku.model.BaseDanmaku;

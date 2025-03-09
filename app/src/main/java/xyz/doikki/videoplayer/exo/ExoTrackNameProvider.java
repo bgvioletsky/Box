@@ -13,7 +13,7 @@ import androidx.media3.common.util.Assertions;
 import androidx.media3.common.util.UnstableApi;
 import androidx.media3.common.util.Util;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 
 import java.util.Locale;
 

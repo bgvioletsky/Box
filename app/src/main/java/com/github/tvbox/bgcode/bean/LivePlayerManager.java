@@ -1,11 +1,11 @@
-package com.github.tvbox.bgcode.bean;
+package com.github.tvbox.osc.bean;
 
 import androidx.annotation.NonNull;
 import androidx.exifinterface.media.ExifInterface;
 
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.util.HawkConfig;
-import com.github.tvbox.bgcode.util.PlayerHelper;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.util.HawkConfig;
+import com.github.tvbox.osc.util.PlayerHelper;
 import com.orhanobut.hawk.Hawk;
 
 import org.json.JSONException;

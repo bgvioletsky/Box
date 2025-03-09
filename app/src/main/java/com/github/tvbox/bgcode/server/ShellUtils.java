@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.server;
+package com.github.tvbox.osc.server;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

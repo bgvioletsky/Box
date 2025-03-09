@@ -1,13 +1,13 @@
-package com.github.tvbox.bgcode.util.js;
+package com.github.tvbox.osc.util.js;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Base64;
 import androidx.media3.common.util.UriUtil;
 import com.github.catvod.crawler.Spider;
-import com.github.tvbox.bgcode.util.FileUtils;
-import com.github.tvbox.bgcode.util.LOG;
-import com.github.tvbox.bgcode.util.MD5;
+import com.github.tvbox.osc.util.FileUtils;
+import com.github.tvbox.osc.util.LOG;
+import com.github.tvbox.osc.util.MD5;
 
 import com.whl.quickjs.android.QuickJSLoader;
 import com.whl.quickjs.wrapper.Function;

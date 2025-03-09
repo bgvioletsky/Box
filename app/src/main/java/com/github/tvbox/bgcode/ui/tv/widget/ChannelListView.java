@@ -1,11 +1,11 @@
-package com.github.tvbox.bgcode.ui.tv.widget;
+package com.github.tvbox.osc.ui.tv.widget;
 
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.widget.ListView;
 
-import com.github.tvbox.bgcode.ui.activity.LivePlayActivity;
+import com.github.tvbox.osc.ui.activity.LivePlayActivity;
 
 public class ChannelListView extends ListView {
     DataChangedListener dataChangedListener;

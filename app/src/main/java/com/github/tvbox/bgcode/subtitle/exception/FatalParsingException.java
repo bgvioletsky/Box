@@ -24,7 +24,7 @@
  * @author J. David REQUEJO
  */
 
-package com.github.tvbox.bgcode.subtitle.exception;
+package com.github.tvbox.osc.subtitle.exception;
 
 /**
  * This class represents problems that may arise during the parsing of a subttile file.

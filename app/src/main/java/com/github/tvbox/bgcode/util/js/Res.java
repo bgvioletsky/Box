@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util.js;
+package com.github.tvbox.osc.util.js;
 
 import android.text.TextUtils;
 import android.util.Base64;

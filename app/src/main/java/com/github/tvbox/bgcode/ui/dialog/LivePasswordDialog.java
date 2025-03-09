@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,18 +1,18 @@
-package com.github.tvbox.bgcode.subtitle;
+package com.github.tvbox.osc.subtitle;
 
 import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.github.tvbox.bgcode.subtitle.exception.FatalParsingException;
-import com.github.tvbox.bgcode.subtitle.format.FormatASS;
-import com.github.tvbox.bgcode.subtitle.format.FormatSRT;
-import com.github.tvbox.bgcode.subtitle.format.FormatSTL;
-import com.github.tvbox.bgcode.subtitle.format.TimedTextFileFormat;
-import com.github.tvbox.bgcode.subtitle.model.TimedTextObject;
-import com.github.tvbox.bgcode.subtitle.runtime.AppTaskExecutor;
-import com.github.tvbox.bgcode.util.FileUtils;
-import com.github.tvbox.bgcode.util.UnicodeReader;
+import com.github.tvbox.osc.subtitle.exception.FatalParsingException;
+import com.github.tvbox.osc.subtitle.format.FormatASS;
+import com.github.tvbox.osc.subtitle.format.FormatSRT;
+import com.github.tvbox.osc.subtitle.format.FormatSTL;
+import com.github.tvbox.osc.subtitle.format.TimedTextFileFormat;
+import com.github.tvbox.osc.subtitle.model.TimedTextObject;
+import com.github.tvbox.osc.subtitle.runtime.AppTaskExecutor;
+import com.github.tvbox.osc.util.FileUtils;
+import com.github.tvbox.osc.util.UnicodeReader;
 import com.lzy.okgo.OkGo;
 
 import org.apache.commons.io.input.ReaderInputStream;

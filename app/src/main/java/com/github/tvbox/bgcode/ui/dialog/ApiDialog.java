@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,14 +10,14 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.event.RefreshEvent;
-import com.github.tvbox.bgcode.server.ControlManager;
-import com.github.tvbox.bgcode.ui.activity.HomeActivity;
-import com.github.tvbox.bgcode.ui.adapter.ApiHistoryDialogAdapter;
-import com.github.tvbox.bgcode.ui.tv.QRCodeGen;
-import com.github.tvbox.bgcode.util.DefaultConfig;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.event.RefreshEvent;
+import com.github.tvbox.osc.server.ControlManager;
+import com.github.tvbox.osc.ui.activity.HomeActivity;
+import com.github.tvbox.osc.ui.adapter.ApiHistoryDialogAdapter;
+import com.github.tvbox.osc.ui.tv.QRCodeGen;
+import com.github.tvbox.osc.util.DefaultConfig;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.XXPermissions;
 import com.orhanobut.hawk.Hawk;

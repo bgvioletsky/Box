@@ -1,14 +1,14 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Base64;
 
 import com.github.catvod.utils.Path;
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.server.ControlManager;
-import com.github.tvbox.bgcode.util.StringUtils;
-import com.github.tvbox.bgcode.util.urlhttp.OkHttpUtil;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.server.ControlManager;
+import com.github.tvbox.osc.util.StringUtils;
+import com.github.tvbox.osc.util.urlhttp.OkHttpUtil;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.lzy.okgo.OkGo;

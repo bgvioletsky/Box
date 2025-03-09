@@ -1,7 +1,7 @@
-package com.github.tvbox.bgcode.data;
+package com.github.tvbox.osc.data;
 
 
-import com.github.tvbox.bgcode.cache.SearchHistory;
+import com.github.tvbox.osc.cache.SearchHistory;
 
 import java.util.ArrayList;
 

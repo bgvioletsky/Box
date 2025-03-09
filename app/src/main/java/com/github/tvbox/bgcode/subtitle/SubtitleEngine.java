@@ -1,8 +1,8 @@
-package com.github.tvbox.bgcode.subtitle;
+package com.github.tvbox.osc.subtitle;
 
 import androidx.annotation.Nullable;
 
-import com.github.tvbox.bgcode.subtitle.model.Subtitle;
+import com.github.tvbox.osc.subtitle.model.Subtitle;
 
 import java.util.List;
 

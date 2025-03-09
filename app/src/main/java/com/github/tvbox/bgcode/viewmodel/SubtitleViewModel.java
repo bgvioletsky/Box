@@ -1,13 +1,13 @@
-package com.github.tvbox.bgcode.viewmodel;
+package com.github.tvbox.osc.viewmodel;
 
 import android.text.TextUtils;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.github.tvbox.bgcode.bean.SubtitleBean;
-import com.github.tvbox.bgcode.bean.SubtitleData;
-import com.github.tvbox.bgcode.ui.dialog.SearchSubtitleDialog;
-import com.github.tvbox.bgcode.util.LOG;
+import com.github.tvbox.osc.bean.SubtitleBean;
+import com.github.tvbox.osc.bean.SubtitleData;
+import com.github.tvbox.osc.ui.dialog.SearchSubtitleDialog;
+import com.github.tvbox.osc.util.LOG;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.AbsCallback;
 

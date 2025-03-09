@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util.urlhttp;
+package com.github.tvbox.osc.util.urlhttp;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

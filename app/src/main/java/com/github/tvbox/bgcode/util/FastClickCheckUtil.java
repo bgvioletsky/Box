@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.os.Handler;
 import android.view.View;

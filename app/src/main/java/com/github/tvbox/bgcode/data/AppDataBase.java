@@ -1,18 +1,18 @@
-package com.github.tvbox.bgcode.data;
+package com.github.tvbox.osc.data;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-import com.github.tvbox.bgcode.cache.Cache;
-import com.github.tvbox.bgcode.cache.CacheDao;
-import com.github.tvbox.bgcode.cache.SearchDao;
-import com.github.tvbox.bgcode.cache.SearchHistory;
-import com.github.tvbox.bgcode.cache.StorageDrive;
-import com.github.tvbox.bgcode.cache.StorageDriveDao;
-import com.github.tvbox.bgcode.cache.VodCollect;
-import com.github.tvbox.bgcode.cache.VodCollectDao;
-import com.github.tvbox.bgcode.cache.VodRecord;
-import com.github.tvbox.bgcode.cache.VodRecordDao;
+import com.github.tvbox.osc.cache.Cache;
+import com.github.tvbox.osc.cache.CacheDao;
+import com.github.tvbox.osc.cache.SearchDao;
+import com.github.tvbox.osc.cache.SearchHistory;
+import com.github.tvbox.osc.cache.StorageDrive;
+import com.github.tvbox.osc.cache.StorageDriveDao;
+import com.github.tvbox.osc.cache.VodCollect;
+import com.github.tvbox.osc.cache.VodCollectDao;
+import com.github.tvbox.osc.cache.VodRecord;
+import com.github.tvbox.osc.cache.VodRecordDao;
 
 
 /**

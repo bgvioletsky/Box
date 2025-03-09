@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,10 +9,10 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.bean.SourceBean;
-import com.github.tvbox.bgcode.ui.adapter.CheckboxSearchAdapter;
-import com.github.tvbox.bgcode.util.FastClickCheckUtil;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.bean.SourceBean;
+import com.github.tvbox.osc.ui.adapter.CheckboxSearchAdapter;
+import com.github.tvbox.osc.util.FastClickCheckUtil;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;
 import com.owen.tvrecyclerview.widget.V7GridLayoutManager;
 

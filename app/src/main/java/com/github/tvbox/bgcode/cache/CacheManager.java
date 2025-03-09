@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.cache;
+package com.github.tvbox.osc.cache;
 
-import com.github.tvbox.bgcode.data.AppDataManager;
+import com.github.tvbox.osc.data.AppDataManager;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -1,8 +1,8 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.util.Log;
 
-import com.github.tvbox.bgcode.event.LogEvent;
+import com.github.tvbox.osc.event.LogEvent;
 
 import org.greenrobot.eventbus.EventBus;
 

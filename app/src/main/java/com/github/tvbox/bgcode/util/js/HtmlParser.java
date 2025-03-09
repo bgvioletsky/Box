@@ -1,7 +1,7 @@
-package com.github.tvbox.bgcode.util.js;
+package com.github.tvbox.osc.util.js;
 
 import android.text.TextUtils;
-import com.github.tvbox.bgcode.util.StringUtils;
+import com.github.tvbox.osc.util.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

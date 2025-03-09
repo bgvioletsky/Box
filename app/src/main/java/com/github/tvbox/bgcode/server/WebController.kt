@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.server
+package com.github.tvbox.osc.server
 
-import com.github.tvbox.bgcode.event.RefreshEvent
+import com.github.tvbox.osc.event.RefreshEvent
 import com.yanzhenjie.andserver.annotation.GetMapping
 import com.yanzhenjie.andserver.annotation.QueryParam
 import com.yanzhenjie.andserver.annotation.ResponseBody

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 public class HistoryHelper {
     
     private static Integer[] hisNumArray = {20, 40, 60, 80, 100};

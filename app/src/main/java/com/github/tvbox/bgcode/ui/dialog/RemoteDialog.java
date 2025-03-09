@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.dialog;
+package com.github.tvbox.osc.ui.dialog;
 
 import android.content.Context;
 import android.widget.ImageView;
@@ -6,9 +6,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.server.ControlManager;
-import com.github.tvbox.bgcode.ui.tv.QRCodeGen;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.server.ControlManager;
+import com.github.tvbox.osc.ui.tv.QRCodeGen;
 
 import org.jetbrains.annotations.NotNull;
 

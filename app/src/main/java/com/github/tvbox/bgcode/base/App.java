@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.base;
+package com.github.tvbox.osc.base;
 
 import android.os.Environment;
 import android.os.Handler;
@@ -9,19 +9,19 @@ import androidx.multidex.MultiDexApplication;
 
 import com.github.catvod.crawler.JarLoader;
 import com.github.catvod.crawler.JsLoader;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.callback.EmptyCallback;
-import com.github.tvbox.bgcode.callback.LoadingCallback;
-import com.github.tvbox.bgcode.data.AppDataManager;
-import com.github.tvbox.bgcode.server.ControlManager;
-import com.github.tvbox.bgcode.util.EpgUtil;
-import com.github.tvbox.bgcode.util.FileUtils;
-import com.github.tvbox.bgcode.util.HawkConfig;
-import com.github.tvbox.bgcode.util.LocaleHelper;
-import com.github.tvbox.bgcode.util.LOG;
-import com.github.tvbox.bgcode.util.OkGoHelper;
-import com.github.tvbox.bgcode.util.PlayerHelper;
-import com.github.tvbox.bgcode.util.SubtitleHelper;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.callback.EmptyCallback;
+import com.github.tvbox.osc.callback.LoadingCallback;
+import com.github.tvbox.osc.data.AppDataManager;
+import com.github.tvbox.osc.server.ControlManager;
+import com.github.tvbox.osc.util.EpgUtil;
+import com.github.tvbox.osc.util.FileUtils;
+import com.github.tvbox.osc.util.HawkConfig;
+import com.github.tvbox.osc.util.LocaleHelper;
+import com.github.tvbox.osc.util.LOG;
+import com.github.tvbox.osc.util.OkGoHelper;
+import com.github.tvbox.osc.util.PlayerHelper;
+import com.github.tvbox.osc.util.SubtitleHelper;
 import com.hjq.permissions.XXPermissions;
 import com.kingja.loadsir.core.LoadSir;
 import com.orhanobut.hawk.Hawk;

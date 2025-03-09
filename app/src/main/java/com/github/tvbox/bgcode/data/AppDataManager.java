@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.data;
+package com.github.tvbox.osc.data;
 
 import android.database.sqlite.SQLiteException;
 
@@ -8,8 +8,8 @@ import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.util.FileUtils;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.util.FileUtils;
 
 import java.io.File;
 import java.io.IOException;

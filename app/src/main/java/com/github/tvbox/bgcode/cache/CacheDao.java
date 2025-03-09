@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.cache;
+package com.github.tvbox.osc.cache;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

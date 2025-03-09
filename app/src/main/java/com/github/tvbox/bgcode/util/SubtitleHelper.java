@@ -1,12 +1,12 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.subtitle.widget.SimpleSubtitleView;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.subtitle.widget.SimpleSubtitleView;
 import com.orhanobut.hawk.Hawk;
 
 public class SubtitleHelper {

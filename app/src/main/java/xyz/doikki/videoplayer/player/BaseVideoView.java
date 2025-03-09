@@ -23,7 +23,7 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util.js;
+package com.github.tvbox.osc.util.js;
 
 import com.whl.quickjs.wrapper.JSCallFunction;
 import com.whl.quickjs.wrapper.JSFunction;

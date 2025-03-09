@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.subtitle;
+package com.github.tvbox.osc.subtitle;
 
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -7,14 +7,14 @@ import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.cache.CacheManager;
-import com.github.tvbox.bgcode.player.EXOmPlayer;
-import com.github.tvbox.bgcode.subtitle.model.Subtitle;
-import com.github.tvbox.bgcode.subtitle.model.Time;
-import com.github.tvbox.bgcode.util.FileUtils;
-import com.github.tvbox.bgcode.util.MD5;
-import com.github.tvbox.bgcode.util.SubtitleHelper;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.cache.CacheManager;
+import com.github.tvbox.osc.player.EXOmPlayer;
+import com.github.tvbox.osc.subtitle.model.Subtitle;
+import com.github.tvbox.osc.subtitle.model.Time;
+import com.github.tvbox.osc.util.FileUtils;
+import com.github.tvbox.osc.util.MD5;
+import com.github.tvbox.osc.util.SubtitleHelper;
 
 import java.io.File;
 import java.util.ArrayList;

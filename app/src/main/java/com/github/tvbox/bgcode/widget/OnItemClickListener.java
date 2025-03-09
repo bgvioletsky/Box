@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.widget;
+package com.github.tvbox.osc.widget;
 
 import android.view.View;
 

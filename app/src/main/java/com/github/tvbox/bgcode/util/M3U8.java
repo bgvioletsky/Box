@@ -1,8 +1,8 @@
-package com.github.tvbox.bgcode.util;
+package com.github.tvbox.osc.util;
 
 import androidx.media3.common.util.UriUtil;
 
-import com.github.tvbox.bgcode.base.App;
+import com.github.tvbox.osc.base.App;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

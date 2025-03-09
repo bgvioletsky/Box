@@ -1,6 +1,6 @@
-package com.github.tvbox.bgcode.callback;
+package com.github.tvbox.osc.callback;
 
-import com.github.tvbox.bgcode.R;
+import com.github.tvbox.osc.R;
 import com.kingja.loadsir.callback.Callback;
 
 /**

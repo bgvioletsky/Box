@@ -1,15 +1,15 @@
-package com.github.tvbox.bgcode.player;
+package com.github.tvbox.osc.player;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.bean.IJKCode;
-import com.github.tvbox.bgcode.util.FileUtils;
-import com.github.tvbox.bgcode.util.HawkConfig;
-import com.github.tvbox.bgcode.util.MD5;
-import com.github.tvbox.bgcode.util.PlayerHelper;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.bean.IJKCode;
+import com.github.tvbox.osc.util.FileUtils;
+import com.github.tvbox.osc.util.HawkConfig;
+import com.github.tvbox.osc.util.MD5;
+import com.github.tvbox.osc.util.PlayerHelper;
 import com.orhanobut.hawk.Hawk;
 
 import java.io.File;

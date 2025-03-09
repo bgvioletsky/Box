@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.activity;
+package com.github.tvbox.osc.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,14 +12,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.base.BaseActivity;
-import com.github.tvbox.bgcode.bean.AppInfo;
-import com.github.tvbox.bgcode.event.RefreshEvent;
-import com.github.tvbox.bgcode.ui.adapter.AppsAdapter;
-import com.github.tvbox.bgcode.util.FastClickCheckUtil;
-import com.github.tvbox.bgcode.util.HawkConfig;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.base.BaseActivity;
+import com.github.tvbox.osc.bean.AppInfo;
+import com.github.tvbox.osc.event.RefreshEvent;
+import com.github.tvbox.osc.ui.adapter.AppsAdapter;
+import com.github.tvbox.osc.util.FastClickCheckUtil;
+import com.github.tvbox.osc.util.HawkConfig;
 import com.owen.tvrecyclerview.widget.TvRecyclerView;
 import com.owen.tvrecyclerview.widget.V7GridLayoutManager;
 

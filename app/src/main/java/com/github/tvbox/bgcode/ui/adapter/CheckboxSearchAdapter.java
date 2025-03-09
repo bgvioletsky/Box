@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.bean.SourceBean;
-import com.github.tvbox.bgcode.util.SearchHelper;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.bean.SourceBean;
+import com.github.tvbox.osc.util.SearchHelper;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,4 +1,4 @@
-package com.github.tvbox.bgcode.util.js;
+package com.github.tvbox.osc.util.js;
 
 import androidx.annotation.Keep;
 import com.orhanobut.hawk.Hawk;

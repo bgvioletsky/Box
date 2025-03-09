@@ -1,15 +1,15 @@
-package com.github.tvbox.bgcode.ui.adapter;
+package com.github.tvbox.osc.ui.adapter;
 
 import android.text.TextUtils;
 import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.github.tvbox.bgcode.R;
-import com.github.tvbox.bgcode.api.ApiConfig;
-import com.github.tvbox.bgcode.bean.Movie;
-import com.github.tvbox.bgcode.util.DefaultConfig;
-import com.github.tvbox.bgcode.util.ImgUtil;
+import com.github.tvbox.osc.R;
+import com.github.tvbox.osc.api.ApiConfig;
+import com.github.tvbox.osc.bean.Movie;
+import com.github.tvbox.osc.util.DefaultConfig;
+import com.github.tvbox.osc.util.ImgUtil;
 
 import java.util.ArrayList;
 

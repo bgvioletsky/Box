@@ -1,10 +1,10 @@
-package com.github.tvbox.bgcode.util.thunder;
+package com.github.tvbox.osc.util.thunder;
 
 import android.net.Uri;
 import android.text.TextUtils;
 
-import com.github.tvbox.bgcode.base.App;
-import com.github.tvbox.bgcode.util.LocalIPAddress;
+import com.github.tvbox.osc.base.App;
+import com.github.tvbox.osc.util.LocalIPAddress;
 import com.p2p.P2PClass;
 
 import java.io.UnsupportedEncodingException;

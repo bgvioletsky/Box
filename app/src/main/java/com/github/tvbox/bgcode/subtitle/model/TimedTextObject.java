@@ -24,13 +24,13 @@
  * @author J. David REQUEJO
  */
 
-package com.github.tvbox.bgcode.subtitle.model;
+package com.github.tvbox.osc.subtitle.model;
 
-import com.github.tvbox.bgcode.subtitle.format.FormatASS;
-import com.github.tvbox.bgcode.subtitle.format.FormatSCC;
-import com.github.tvbox.bgcode.subtitle.format.FormatSRT;
-import com.github.tvbox.bgcode.subtitle.format.FormatSTL;
-import com.github.tvbox.bgcode.subtitle.format.FormatTTML;
+import com.github.tvbox.osc.subtitle.format.FormatASS;
+import com.github.tvbox.osc.subtitle.format.FormatSCC;
+import com.github.tvbox.osc.subtitle.format.FormatSRT;
+import com.github.tvbox.osc.subtitle.format.FormatSTL;
+import com.github.tvbox.osc.subtitle.format.FormatTTML;
 
 import java.util.Hashtable;
 import java.util.Iterator;
