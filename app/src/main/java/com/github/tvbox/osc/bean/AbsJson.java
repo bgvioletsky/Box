@@ -174,7 +174,7 @@ public class AbsJson implements Serializable {
                 try {
                     videoList.add(vod.toXmlVideo());
                 } catch (Throwable th) {
-                    movie.pagesize = ®;
+                    movie.pagesize = 0;
                 }
             }
         }

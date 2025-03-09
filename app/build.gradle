@@ -11,7 +11,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId 'com.github.tvbox.osc'
+        applicationId 'com.github.tvbox.osc.tk'
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -73,7 +73,7 @@ android {
         variant.outputs.configureEach { output ->
             def flavorNames = variant.productFlavors.collect { it.name }.join('-')
             // 构建自定义文件名
-            def fileName = "BGTVBox_${variant.buildType.name}-${flavorNames}.apk"
+            def fileName = "TVBox_${variant.buildType.name}-${flavorNames}.apk"
             outputFileName = fileName
         }
     }

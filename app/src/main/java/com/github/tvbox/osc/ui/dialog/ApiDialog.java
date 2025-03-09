@@ -68,7 +68,7 @@ public class ApiDialog extends BaseDialog {
         ivQRCode = findViewById(R.id.ivQRCode);
         tvAddress = findViewById(R.id.tvAddress);
         inputApi = findViewById(R.id.input);
-        inputApi.setText(Hawk.get(HawkConfig.API_URL, "https://github.ednovas.xyz/https://raw.githubusercontent.com/bgvioletsky/BGBox_warehouse/master/json/api.json"));
+        inputApi.setText(Hawk.get(HawkConfig.API_URL, ""));
 
         // takagen99: Add Live & EPG Address
         inputLive = findViewById(R.id.input_live);
