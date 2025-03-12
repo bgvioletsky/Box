@@ -1,11 +1,12 @@
 API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/workflows/$GITHUB_WORKFLOW.yml/runs"
 # API_URL="https://api.github.com/repos/bgvioletsky/Box/actions/workflows/tset.yml/runs"
-curl -s -L "$API_URL" > runs.json
-runs=$(cat runs.json |jq -r '.workflow_runs[].id')
-echo $runs
+echo $API_URL
+# curl -s -L "$API_URL" > runs.json
+# runs=$(cat runs.json |jq -r '.workflow_runs[].id')
+# echo $runs
 #   # 
 #           # 将运行记录ID转换为数组
-IFS=$'\n' read -r -d '' -a run_ids <<< "$runs"
+         IFS=$'\n' read -r -d '' -a run_ids <<< "$runs"
           
           # 计算需要删除的运行记录数量
           num_to_delete=$(( ${#run_ids[@]} - 5 ))
