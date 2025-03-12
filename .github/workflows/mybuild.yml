@@ -19,8 +19,8 @@ jobs:
       - name: 自动版本号
         run: |
           # 读取 versionCode 和 version
-          versionCode=$(cat config/versionCode)
-          VERSION=$(cat config/version)
+          versionCode=$(cat ./config/versionCode)
+          VERSION=$(cat ./config/version)
 
           # 以"."分割版本号，并将其放入数组中
           IFS='.' read -r -a versionArray <<< "$VERSION"
