@@ -1,9 +1,9 @@
-if [ ! -f version ]; then
+if [ ! -f ./config/version ]; then
     echo "0.0.0" > version
 fi
 
 # 从version文件中读取当前版本号
-VERSION=$(cat version)
+VERSION=$(cat ./config/version)
 
 # 以"."分割版本号，并将其放入数组中
 IFS='.' read -r -a versionArray <<< "$VERSION"
@@ -24,7 +24,7 @@ if [ "${versionArray[2]}" -eq 20 ]; then
 fi
 
 # 将新版本号写回到version文件中
-echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > version
+echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > ./config/version
 
 # 打印新版本号
 echo "v${versionArray[0]}.${versionArray[1]}.${versionArray[2]}"
