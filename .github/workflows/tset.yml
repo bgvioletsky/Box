@@ -36,6 +36,8 @@ jobs:
       - name: Delete old workflow runs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_WORKFLOW: ${{ github.workflow }}
         run: |
           # 获取所有工作流运行记录
           chmod +x ./config/delete.sh
