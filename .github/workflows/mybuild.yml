@@ -17,6 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: 自动版本号
+        shell: bash
         run: |
           # 读取 versionCode 和 version
           versionCode=$(cat ./config/versionCode)
