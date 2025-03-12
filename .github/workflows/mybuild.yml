@@ -29,37 +29,37 @@ jobs:
           echo "version=$vss" >> $GITHUB_ENV
           # 打印发布时间到 bgcode.txt
           echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
-      # - name: Build With Gradle
-      #   run: |
-      #     sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
-      #     sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
-      #     chmod +x gradlew
-      #     ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+      - name: Build With Gradle
+        run: |
+          sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
+          sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
+          chmod +x gradlew
+          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
 
-      # - name: Prepare App
-      #   run: |
-      #     mkdir -p ${{ github.workspace }}/apk/
-      #     for file in `find ~ -name "*.apk" -print`; do
-      #       mv "$file" ${{ github.workspace }}/apk/
-      #     done
+      - name: Prepare App
+        run: |
+          mkdir -p ${{ github.workspace }}/apk/
+          for file in `find ~ -name "*.apk" -print`; do
+            mv "$file" ${{ github.workspace }}/apk/
+          done
 
-      # - name: Commit and push changes
-      #   run: |
-      #         git config --local user.email bglhcode@icloud.com
-      #         git config --local user.name  bgcode
-      #         git pull
-      #         git add ./config/version  ./config/versionCode
-      #         git commit -m "更新version版本"
-      #         git push
+      - name: Commit and push changes
+        run: |
+              git config --local user.email bglhcode@icloud.com
+              git config --local user.name  bgcode
+              git pull
+              git add ./config/version  ./config/versionCode
+              git commit -m "更新version版本"
+              git push
 
-      # - name: Upload App To Artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: com.github.tvbox.osc
-      #     path: ${{ github.workspace }}/apk/*
-      # - name: 发布到release
-        # uses: softprops/action-gh-release@v1
-        # with:
-        #     tag_name: v${{ env.version }}
-        #     body_path: bgcode.txt
-        #     files: ${{ github.workspace }}/apk/*
+      - name: Upload App To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: com.github.tvbox.osc
+          path: ${{ github.workspace }}/apk/*
+      - name: 发布到release
+        uses: softprops/action-gh-release@v1
+        with:
+            tag_name: v${{ env.version }}
+            body_path: bgcode.txt
+            files: ${{ github.workspace }}/apk/*
