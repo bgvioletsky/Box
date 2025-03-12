@@ -1,4 +1,4 @@
- runs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/$GITHUB_WORKFLOW/runs" | jq -r '.workflow_runs[].id')
+ runs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/$GITHUB_WORKFLOW.yml/runs" | jq -r '.workflow_runs[].id')
           
           # 将运行记录ID转换为数组
           IFS=$'\n' read -r -d '' -a run_ids <<< "$runs"
