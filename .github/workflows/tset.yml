@@ -1,8 +1,8 @@
 name: test
 
 on:
-  schedule:
-    - cron: 6 */8 * * *
+#   schedule:
+#     - cron: 6 */8 * * *
 #  push:
 #    branches:
 #      - main
