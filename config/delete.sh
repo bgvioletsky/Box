@@ -1,9 +1,8 @@
-API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/148524231/runs"
-response=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN"  -H "X-GitHub-Api-Version: 2022-11-28" "$API_URL")
+API_URL="https://api.github.com/repos/bgvioletsky/Box/actions/workflows/tset.yml/runs"
+response=$(curl -s -L "$API_URL")
 
  
-#  runs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos//actions/workflows//runs")
-  echo $response
+echo $response
   # | jq -r '.workflow_runs[].id
           # 将运行记录ID转换为数组
 #  IFS=$'\n' read -r -d '' -a run_ids <<< "$runs"
