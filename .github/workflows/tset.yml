@@ -16,20 +16,43 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Build With Gradle
+      # - name: Build With Gradle
+      #   run: |
+      #       sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
+      #       sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
+      #       chmod +x gradlew
+      #       ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+      # - name: Prepare App
+      #   run: |
+      #         mkdir -p ${{ github.workspace }}/apk/
+      #         for file in `find ~ -name "*armeabi-generic.apk" -print`; do
+      #           mv "$file" ${{ github.workspace }}/apk/
+      #         done
+      # - name: Upload App To Artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #           name: com.github.tvbox.osc
+      #           path: ${{ github.workspace }}/apk/*
+      - name: Delete old workflow runs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WORKFLOW_ID: ${{ github.event.workflow.id }}
         run: |
-            sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
-            sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
-            chmod +x gradlew
-            ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
-      - name: Prepare App
-        run: |
-              mkdir -p ${{ github.workspace }}/apk/
-              for file in `find ~ -name "*armeabi-generic.apk" -print`; do
-                mv "$file" ${{ github.workspace }}/apk/
-              done
-      - name: Upload App To Artifact
-        uses: actions/upload-artifact@v4
-        with:
-                name: com.github.tvbox.osc
-                path: ${{ github.workspace }}/apk/*
+          # 获取所有工作流运行记录
+          runs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/${{ github.repository }}/actions/workflows/${WORKFLOW_ID}/runs" | jq -r '.workflow_runs[].id')
+          
+          # 将运行记录ID转换为数组
+          IFS=$'\n' read -r -d '' -a run_ids <<< "$runs"
+          
+          # 计算需要删除的运行记录数量
+          num_to_delete=$(( ${#run_ids[@]} - 5 ))
+          
+          # 删除超过20个的旧工作流运行记录
+          if [ $num_to_delete -gt 0 ]; then
+            for (( i=0; i<$num_to_delete; i++ )); do
+              echo "Deleting run ID: ${run_ids[$i]}"
+              curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${run_ids[$i]}"
+            done
+          else
+            echo "No runs to delete."
+          fi
