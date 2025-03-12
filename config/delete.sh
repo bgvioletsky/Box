@@ -1,5 +1,7 @@
-API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/workflows/$GITHUB_WORKFLOW.yml/runs"
-runs=$(curl -s -L "$API_URL" | jq -r '.workflow_runs[].id')
+# API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/workflows/$GITHUB_WORKFLOW.yml/runs"
+API_URL="https://api.github.com/repos/bgvioletsky/Box/actions/workflows/tset.yml/runs"
+curl -s -L "$API_URL" > runs.json
+runs=$(cat runs.json |jq -r '.workflow_runs[].id')
 echo $runs
 #   # 
 #           # 将运行记录ID转换为数组
