@@ -58,7 +58,7 @@ jobs:
       - name: 发布到release
         uses: softprops/action-gh-release@v1
         with:
-            tag_name: v${{ env.version }}
+            tag_name: ${{ env.version }}
             body_path: bgcode.txt
             files: ${{ github.workspace }}/apk/*
             
