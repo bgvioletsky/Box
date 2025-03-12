@@ -63,19 +63,4 @@ jobs:
             tag_name: v${{ env.version }}
             body_path: bgcode.txt
             files: ${{ github.workspace }}/apk/*
-      - name: 删除
-        shell: bash
-        run: |
-                    current_run_id=$(echo "$GITHUB_RUN_ID")
-                    runs=$(curl -s -X GET "https://api.github.com/repos/${{ github.repository }}/actions/workflows/${{ github.workflow }}/runs" \
-                      -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-                      -H "Accept: application/vnd.github.v3+json" | jq -r '.workflow_runs[].id')
-                    echo "$runs"
-                        keep_runs=$(echo "$runs" | head -n 5)
-                        for run_id in $runs; do
-                          if [ "$run_id" != "$current_run_id" ] && [[ ! "$keep_runs" =~ "$run_id" ]]; then
-                            curl -s -X DELETE "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" \
-                              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-                              -H "Accept: application/vnd.github.v3+json" > /dev/null
-                          fi
-                        done
+     
