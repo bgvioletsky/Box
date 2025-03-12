@@ -39,23 +39,24 @@ jobs:
                   ((versionArray[0]++))
               fi
           fi
+          echo "versionCode=${versionCode}"
+          echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}"
+          # # 递增 versionCode
+          # ((versionCode++))
 
-          # 递增 versionCode
-          ((versionCode++))
+          # # 将新版本号和 versionCode 写回到文件中
+          # echo "$versionCode" > config/versionCode
+          # echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > config/version
 
-          # 将新版本号和 versionCode 写回到文件中
-          echo "$versionCode" > config/versionCode
-          echo "${versionArray[0]}.${versionArray[1]}.${versionArray[2]}" > config/version
+          # # 读取新版本号
+          # vss=$(cat config/version)
 
-          # 读取新版本号
-          vss=$(cat config/version)
+          # # 打印新版本号到 $GITHUB_ENV
+          # echo "versionCode=$versionCode" >> $GITHUB_ENV
+          # echo "version=$vss" >> $GITHUB_ENV
 
-          # 打印新版本号到 $GITHUB_ENV
-          echo "versionCode=$versionCode" >> $GITHUB_ENV
-          echo "version=$vss" >> $GITHUB_ENV
-
-          # 打印发布时间到 bgcode.txt
-          echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
+          # # 打印发布时间到 bgcode.txt
+          # echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
       # - name: Build With Gradle
       #   run: |
       #     sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
