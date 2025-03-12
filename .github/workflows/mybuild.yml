@@ -22,8 +22,8 @@ jobs:
           versionCode=$(cat ./config/versionCode)
           VERSION=$(cat ./config/version)
 
-          # # 以"."分割版本号，并将其放入数组中
-          # IFS='.' read -r -a versionArray <<< "$VERSION"
+          # 以"."分割版本号，并将其放入数组中
+          IFS='.' read -r -a versionArray <<< "$VERSION"
 
           # # 递增最后一位数字
           # ((versionArray[2]++))
