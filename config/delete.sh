@@ -9,7 +9,7 @@ echo $runs
          IFS=$'\n' read -r -d '' -a run_ids <<< "$runs"
           
           # 计算需要删除的运行记录数量
-          num_to_delete=$(( ${#run_ids[@]} - 5 ))
+          num_to_delete=$(( ${#run_ids[@]} ))
           
           # 删除超过20个的旧工作流运行记录
           if [ $num_to_delete -gt 0 ]; then
