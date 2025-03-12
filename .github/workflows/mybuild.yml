@@ -19,56 +19,52 @@ jobs:
       - name: 自动版本号
         shell: bash
         run: |
-          # 读取 versionCode 和 version
           versionCode=$(cat ./config/versionCode)
           chmod +x ./config/version.sh
           echo "version=$(bash ./config/version.sh)" >> $GITHUB_ENV
-          # 递增 versionCode
           ((versionCode++))
-          # 将新版本号和 versionCode 写回到文件中
           echo "$versionCode" > config/versionCode
           echo "version=$vss" >> $GITHUB_ENV
-          # 打印发布时间到 bgcode.txt
           echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
-      - name: Build With Gradle
-        run: |
-          sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
-          sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
-          chmod +x gradlew
-          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+      # - name: Build With Gradle
+      #   run: |
+      #     sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
+      #     sed -i "/   versionName/c\\versionName '${{ env.version }}'" ./app/build.gradle
+      #     chmod +x gradlew
+      #     ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
 
-      - name: Prepare App
-        run: |
-          mkdir -p ${{ github.workspace }}/apk/
-          for file in `find ~ -name "*.apk" -print`; do
-            mv "$file" ${{ github.workspace }}/apk/
-          done
+      # - name: Prepare App
+      #   run: |
+      #     mkdir -p ${{ github.workspace }}/apk/
+      #     for file in `find ~ -name "*.apk" -print`; do
+      #       mv "$file" ${{ github.workspace }}/apk/
+      #     done
 
-      - name: Commit and push changes
-        run: |
-              git config --local user.email bglhcode@icloud.com
-              git config --local user.name  bgcode
-              git pull
-              git add ./config/version  ./config/versionCode
-              git commit -m "更新version版本"
-              git push
+      # - name: Commit and push changes
+      #   run: |
+      #         git config --local user.email bglhcode@icloud.com
+      #         git config --local user.name  bgcode
+      #         git pull
+      #         git add ./config/version  ./config/versionCode
+      #         git commit -m "更新version版本"
+      #         git push
 
-      - name: Upload App To Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: com.github.tvbox.osc
-          path: ${{ github.workspace }}/apk/*
-      - name: 发布到release
-        uses: softprops/action-gh-release@v1
-        with:
-            tag_name: v${{ env.version }}
-            body_path: bgcode.txt
-            files: ${{ github.workspace }}/apk/*
-      - name: Delete old workflow runs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_WORKFLOW: ${{ github.workflow }}
-        run: |
-         chmod +x ./config/delete.sh
-         ./config/delete.sh
+      # - name: Upload App To Artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: com.github.tvbox.osc
+      #     path: ${{ github.workspace }}/apk/*
+      # - name: 发布到release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #       tag_name: v${{ env.version }}
+      #       body_path: bgcode.txt
+      #       files: ${{ github.workspace }}/apk/*
+      # - name: Delete old workflow runs
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #   GITHUB_REPOSITORY: ${{ github.repository }}
+        #   GITHUB_WORKFLOW: ${{ github.workflow }}
+        # run: |
+        #  chmod +x ./config/delete.sh
+        #  ./config/delete.sh
