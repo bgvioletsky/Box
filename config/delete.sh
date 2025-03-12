@@ -1,4 +1,4 @@
-API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/$GITHUB_WORKFLOW.yml/runs"
+API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/148524231/runs"
 response=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN"  -H "X-GitHub-Api-Version: 2022-11-28" "$API_URL")
 
  
