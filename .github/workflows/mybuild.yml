@@ -21,6 +21,7 @@ jobs:
         run: |
           # 读取 versionCode 和 version
           versionCode=$(cat ./config/versionCode)
+          chmod +x ./config/version.sh
           echo "version=$(bash ./config/version.sh)" >> $GITHUB_ENV
           # 递增 versionCode
           ((versionCode++))
