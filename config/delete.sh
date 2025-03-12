@@ -1,5 +1,6 @@
 API_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/$GITHUB_WORKFLOW.yml/runs"
 # API_URL="https://api.github.com/repos/bgvioletsky/Box/actions/workflows/tset.yml/runs"
+https://api.github.com/repos/bgvioletsky/Box/actions/workflows/test.yml/runs
 echo $API_URL
 curl -s -L "$API_URL" > runs.json
 runs=$(cat runs.json |jq -r '.workflow_runs[].id')
