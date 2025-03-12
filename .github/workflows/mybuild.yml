@@ -19,13 +19,15 @@ jobs:
       - name: 自动版本号
         shell: bash
         run: |
-          versionCode=$(cat ./config/versionCode)
           chmod +x ./config/version.sh
+          versionCode=$(cat ./config/versionCode)
           echo "version=$(bash ./config/version.sh)" >> $GITHUB_ENV
           ((versionCode++))
           echo "$versionCode" > config/versionCode
-          echo "version=$vss" >> $GITHUB_ENV
+          echo "$versionCode"
+          echo "version=$(bash ./config/version.sh)" 
           echo "**发布时间：$(date +'%Y-%m-%d %H:%M:%S')**" >> bgcode.txt
+
       # - name: Build With Gradle
       #   run: |
       #     sed -i "/   versionCode/c\\versionCode  ${{ env.versionCode }}" ./app/build.gradle
